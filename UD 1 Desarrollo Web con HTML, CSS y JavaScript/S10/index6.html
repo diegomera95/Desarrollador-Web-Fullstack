@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 | Javascript</title>
+    <script>
+        //declarar variables
+        var ig,eg;
+        var am,as,aa;
+        //entrada
+        ig=parseFloat(prompt("Ingresar los ingresos"));
+        eg=parseFloat(prompt("Ingresar los egresos"));
+        //proceso
+        am=parseFloat(ig-eg);
+        as=parseFloat(am*6);
+        an=parseFloat(as*2);
+        //salida
+        document.write("Resultados:"+"<br>");
+        document.write("<hr>");
+        document.write("Ingresos: "+ig+"<br>");
+        document.write("Egresos: "+eg+"<br>");
+        document.write("El ahorro mensual es: "+ am.toFixed(2) +"<br>");
+        document.write("El ahorro semestral es: " + as.toFixed(2) +"<br>");
+        document.write("El ahorro anual es: " + an.toFixed(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

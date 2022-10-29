@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1_ES</title>
+</head>
+<body>
+    <script>
+        //declarar variables
+        var num,mes;
+        var colorfondo;
+        var imagen;
+        //entrada
+        num = parseInt(prompt("Ingresar Número (1-7)"));
+        //proceso
+        switch(num){
+            case 1:
+                mes = "Lunes";
+                colorfondo = "green";
+                imagen = "imagenes/lunes.jpg";
+                break;
+            case 2:
+                mes = "Martes";
+                colorfondo = "blue";
+                imagen = "imagenes/martes.jpg";
+                break;
+            case 3:
+                mes = "Miércoles";
+                colorfondo = "red";
+                imagen = "imagenes/miercoles.jpg";
+                break;
+            case 4:
+                mes = "Jueves";
+                colorfondo = "yellow";
+                imagen = "imagenes/jueves.jpg";
+                break;
+            case 5:
+                mes = "Viernes";
+                colorfondo = "silver";
+                imagen = "imagenes/viernes.jpg";
+                break;
+            case 6:
+                mes = "Sábado";
+                colorfondo = "maroon";
+                imagen = "imagenes/sabado.jpg";
+                break;
+            case 7:
+                mes = "Domingo";
+                colorfondo = "aqua";
+                imagen = "imagenes/domingo.jpg";
+                break;
+            default:
+                mes = "Número fuera del intervalo";
+                break;
+        }
+        //salida
+        document.write("<h1>"+"<center>"+mes+"</center>"+"</h1>");
+        document.bgColor = colorfondo; //color de fondo
+        document.fgColor = "white"; //color de fuente
+        document.write("<img src="+imagen+">");
+    </script>
+</body>
+</html>

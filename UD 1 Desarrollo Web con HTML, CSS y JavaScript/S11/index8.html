@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estaciones del año</title>
+</head>
+<body>
+    <script>
+        //declarar variables
+        var num;
+        var est,mes;
+        //entrada
+        num = parseInt(prompt("Ingresar Número (1-6)"));
+        //proceso
+        switch(num){
+            case 1:
+                mes = "Enero";
+                est = "Verano";
+                break;
+            case 2:
+                mes = "Febrero";
+                est = "Verano";
+                break;
+            case 3:
+                mes = "Marzo";
+                est = "Verano";
+                break;
+            case 4:
+                mes = "Abril";
+                est = "Otoño";
+                break;
+            case 5:
+                mes = "Mayo";
+                est = "Otoño";
+                break;
+            case 6:
+                mes = "Junio";
+                est = "Otoño";
+                break;
+            case 7:
+                mes = "Julio";
+                est = "Invierno";
+                break;
+            case 8:
+                mes = "Agosto";
+                est = "Invierno";
+                break;
+            case 9:
+                mes = "Septiembre";
+                est = "Invierno";
+                break;
+            case 10:
+                mes = "Octubre";
+                est = "Primavera";
+                break;
+            case 11:
+                mes = "Noviembre";
+                est = "Primavera";
+                break;
+            case 12:
+                mes = "Diciembre";
+                est = "Primavera";
+                break;
+            default:
+                mes = "Número fuera del intervalo";
+                break;
+        }
+        //salida
+        document.write("<h1>"+"Resultados"+"</h1>");
+        document.write("<hr>");
+        document.write("Número: "+num+"<br>");
+        document.write("Español: "+mes+"<br>");
+        document.write("Inglés: "+est);
+    </script>
+</body>
+</html>

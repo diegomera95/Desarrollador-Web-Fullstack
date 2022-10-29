@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'montsemibold';
+    src: url('fuentes/mont-semibold-webfont.woff2') format('woff2'),
+         url('fuentes/mont-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fuentes/Quicksand-Regular.woff2') format('woff2'),
+        url('fuentes/Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montbold';
+    src: url('fuentes/mont-bold-webfont.woff2') format('woff2'),
+         url('fuentes/mont-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS Document */
+
+body{background-color: #9c0720;}
+
+main{width: 800px; height: 100%; margin: auto;}
+
+#contenedor{margin-top: 2em;
+            border: solid #fff;
+            border-width: 1px;
+}
+
+header{background-color: #fff;}
+
+#portada1{background-color: #9c0720;}
+
+
+header #barranavegacion{text-align: center;
+                        background-color: #fff;
+                        margin-top: 1em;
+}
+
+.clear{clear: both;}
+
+ul,li{
+    display: inline;
+    padding: 1em;
+    list-style: none; 
+}
+
+ul li,a{
+    font-family: "montbold";
+    letter-spacing: 1px;
+}
+
+nav{height: 40px;
+    margin-bottom: 6px;
+}
+
+a{color: #000;}
+a:hover{color: #ff0000;}
+
+h1{
+    font-family: "montsemibold";
+    font-size: 20px;
+}
+
+#title{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+article{
+    float: left;
+    width: 399px;
+    height: 399px;
+    background-color: #fff;
+}
+
+#fuente1{
+    font-family: "Quicksand";
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#img2{
+    float: right;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.cat{
+    width: 399px;
+    height: 399px;
+}
+
+.clear{clear: both;}
+
+footer{width: 100%; max-height: 100%;height: 30px; background-color: #8c8c8c;}
+#piedepagina{text-align: left; color: #fff;}
+#fuente2{
+    font-family: Quicksand;
+    font-size: 14px;
+}

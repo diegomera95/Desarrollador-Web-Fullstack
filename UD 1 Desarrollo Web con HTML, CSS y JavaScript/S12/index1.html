@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Tábla de Multiplicar</h1>
+        <select id="numeros" onchange="datos()">
+            <option selected>Seleccionar</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    <script>
+        function datos(){
+        //declarar
+        var n,i,r;
+        //declarar variables
+        var cbonumeros = document.getElementById("numeros");
+        var valor = cbonumeros.options[cbonumeros.selectedIndex].text;
+        n=parseInt(valor);
+            //proceso
+            i=0; //inicializa la variable
+            //muestra un texto en el navegador
+            document.write("<h1>"+"Tabla de Multiplicar"+"<h1>");
+            document.write("<hr>");
+            for(i=1;i<=12;i++){
+                r=n*i;
+                //muestra los resultados en el navegador
+            document.write(n+"*"+i+"="+r+"<br>");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1_Estructuras_Selectivas</title>
+</head>
+<body>
+    <script>
+        //declarar variables
+        var opc,num1,num2;
+        var r;
+        var operacion;
+        //entrada
+        num1 = parseInt(prompt("Ingresar Número 1: "));
+        num2 = parseInt(prompt("Ingresar Número 2: "));
+        opc = parseInt(prompt("Tipo de operación[1,2,3,4]:"));
+        //proceso
+        switch(opc){
+            case 1:
+                r=num1+num2;
+                operacion="suma";
+                break;
+            case 2:
+                r=num1-num2;
+                operacion="resta";
+                break;
+            case 3:
+                r=num1*num2;
+                operacion="multiplicación";
+                break;
+            case 4:
+                r=num1/num2;
+                operacion="división";
+                break;
+            default:
+                document.write("La opción es incorrecta"+"<br>");
+                break;
+        }
+
+        //salida
+        document.write("<h1>"+"Resultados de la Operación"+"</h1>");
+        document.write("<hr>");
+        document.write("Número 1: "+num1+"<br>");
+        document.write("Número 2: "+num2+"<br>");
+        document.write("La operación es: "+operacion+"<br>");
+        document.write("Resultados: "+r);
+    </script>
+</body>
+</html>

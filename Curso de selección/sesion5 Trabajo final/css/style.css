@@ -1,0 +1,176 @@
+
+* {
+  box-sizing: border-box;
+}
+.main-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+h1.titulo {
+  margin: 50px auto 30px auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+h1#msg-final {
+  text-align: center;
+  color: crimson;
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: green;
+}
+@keyframes zoomInOut {
+  0% { transform: scale(0); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+h2.palabra {
+  margin: 20px 0px;
+  text-align: center;
+  color: #854d29;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  border: 2px solid #633a1e;
+  padding: 10px;
+  border-radius: 100px;
+  font-weight: 800;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto; 
+}
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.col {
+  width: 50%;
+  text-align: center;
+}
+.col span {
+  
+}
+#turnos h3 {
+  margin: auto;
+}
+h3 span {
+   color: orangered;
+}
+.letra:disabled {
+  color: rgb(199 189 184);
+  background: #eae0db;
+}
+picture {
+  position: relative;
+  width: 230px;
+}
+picture img {
+  position: absolute;
+  height: 225px;
+}
+#image5, #image4, #image3,
+#image2, #image1, #image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+.encuadre {
+  border: 2px dashed crimson;
+  padding: 3px 2px 2px 6px;
+}
+.teclado {
+  width: 45%;
+  padding: 20px;
+}
+.contejuego {
+  width: 55%;
+  padding: 20px;
+}
+.cont-teclado-juego {
+  display: flex;
+}
+.letra {
+  line-height: 50px;
+  width: 50px;
+  margin: 2px;
+  background: #633a1e;
+  border-radius: 100px;
+  padding: 0px;
+  color: #fff;
+  font-size: 28px;
+  border: 0px;
+  font-weight: 800;
+}
+.imagenjuego {
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleintentos {
+  text-align: center;
+}
+.contbtn {
+  width: 100%;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btn {
+  line-height: 45px;
+  margin: 0px 10px;
+  background: #633a1e;
+  color: #fff;
+  border-radius: 100px;
+  padding: 0px 20px;
+  font-weight: 800;
+  border: 0px;
+}
+.pista {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.integrantes {
+  font-size: 18px;
+  background: #633a1e;
+  width: 300px;
+  border-radius: 15px;
+  color: #fff;
+  padding: 15px;
+}
+.title {
+  font-size: 22px;
+  font-weight: 800;
+}

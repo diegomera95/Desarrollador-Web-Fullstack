@@ -1,0 +1,19 @@
+/* agregar estilos a las etiquetas de html mediante propiedades */
+
+/* el color también se puede representar como un número hexadecimal #00FF40 */
+
+main{width: 1004px; height: 800px; margin: auto;
+    border: 7px solid silver;}
+
+header{height: 120px; border: 3px solid blanchedalmond;}
+
+nav{height: 50px; border: 3px solid salmon;}
+
+article{width: 652px; height: 450px; 
+    float: left; border: 3px solid orange;}
+
+aside{height: 450px; margin-left: 652px; 
+    border: 3px solid blue;}
+
+footer{height: 155px;border: 3px solid magenta;}
+

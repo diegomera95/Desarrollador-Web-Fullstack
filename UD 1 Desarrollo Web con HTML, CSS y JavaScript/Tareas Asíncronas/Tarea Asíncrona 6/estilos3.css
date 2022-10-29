@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: #a7a7a7;
+    font-family: 'Roboto';
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    
+}
+
+.bloque1{
+    background-color: #70dd61;
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%;
+    max-width: 20%;
+    height: 100%;
+}
+
+.bloque2{
+    background-color: #f4f742;
+    -ms-flex: 1 0 60%;
+    flex: 1 0 60%;
+    max-width: 60%;
+    height: 100%;
+    margin-left: 20px
+}
+
+.bloque3{
+    background-color: #696969;
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%;
+    max-width: 20%;
+    height: 100%;
+    margin-left: 20px
+}
+
+.link{
+    list-style-type: none;
+    display: flex;
+}
+
+.margin{
+    margin-top: 0;
+}
+
+.row{
+    display: -ms-flexbox;
+    display: flex;
+}
+

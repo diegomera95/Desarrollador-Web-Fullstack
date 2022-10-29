@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body{
+    background-color: gray;
+}
+
+main{
+    background-color: #fff;
+    height: 100%;
+}
+
+#contenedor{
+    padding: 1em;
+    width: 150px;
+    height: 150px;
+}
+
+ul{
+    line-height: 0.3em;
+}
+
+.tercero{
+    font-size: 20px;
+    list-style-type: disc;
+}
+
+.cuarto{
+    font-size: 25px;
+    list-style-type: disc;
+}
+
+.quinto{
+    font-size: 30px;
+    list-style-type: disc;
+}
+
+.color{
+    color: blue;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 10px;
+}
+
+h2{
+    font-size: 25px;
+    line-height: 5px;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 2px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 0.2px;
+    
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+legend{font-size: 20px;}
+
+#form1{
+    width: 40%;
+    margin: auto;
+    background: #900;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    border: solid 10px lightslategray;
+    border-radius: 10px;
+    
+}
+
+#form1 fieldset{
+    margin-left: 5%;
+}
+
+#form1 [required]{
+   border: solid 1px #FF0000; 
+}
+
+#form1 input{
+    margin-left: 30px;
+}

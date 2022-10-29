@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: #fff;
+    font-family: 'Roboto';
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+.nav{
+    font-size: 35px; 
+    font-weight: 700; 
+    margin-bottom: 20px;
+    background-color: #a7a7a7;
+}
+
+.bloque1{
+    background-color: #70dd61;
+    height: 100%;
+}
+
+.bloque2{
+    background-color: #f4f742;
+    height: 100%;
+}
+
+.bloque3{
+    background-color: #696969;
+    height: 100%;
+}
+
+.link{
+    list-style-type: none;
+    display: flex;
+}
+
+.ajustar{
+    justify-content: stretch;
+}

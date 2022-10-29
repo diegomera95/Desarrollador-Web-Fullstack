@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="estilos1.css" type="text/css">
+</head>
+<body>
+    <form id="form1">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            DNI: <input type="text" name="xdni"
+                maxlength="8" placeholder="solo números"
+                pattern="[0-9]+" required>
+            <br>
+            Nombre: <input type="text" name="xnom"
+                pattern="[a-z,A-Z]+" required>
+            <br>
+            Distrito:<select name="xdis">
+                        <option selected>Seleccionar</option>
+                        <option>Lince</option>
+                        <option>Surco</option>
+                        <option>Miraflores</option>
+                        <option>La Molina</option>
+                    </select>
+            <br>
+            Teléfono: <input type="tel" name="xtel"
+                maxlength="9" pattern="[0-9]{3}{-}{1}[0-9]{4}"
+                required>
+            <br>
+            Edad: <input type="number" name="xedad" min="18" 
+                max="65" placeholder="18-65">
+            <br>
+            Sexo: <input type="radio" name="r1">Masculino
+                <input type="radio" name="r1">Femenino
+            <br>
+            Correo: <input type="email" name="xcorreo">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos Tarjeta de Crédito</legend>
+            Entidad: <select name="xentidad">
+                        <option selected>Seleccionar</option>
+                        <option>BCP</option>
+                        <option>BBVA</option>
+                        <option>HSBC</option>
+                        <option>NGB</option>
+                        <option>BN</option>
+            </select>
+            <br>
+            Tipo Tc:<input type="radio" name="r2">American Express
+                    <input type="radio" name="r2">Master Card
+                    <input type="radio" name="r2">Visa
+            <br>
+            Número de Tarjeta: <input type="text" name="xntc"
+                    maxlength="16" pattern="[0-9]+" required>
+            <br>
+            Color: <input type="color" name="xcolor">
+            <br>
+            Línea: <input type="text" name="linea" value="$5000"
+            readonly>
+            <br>
+        </fieldset>
+            <input type="submit" name="bt1" value="Enviar">
+    </form>
+</body>
+</html>

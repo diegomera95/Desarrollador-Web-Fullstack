@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script>
+        //declarar variables
+        var i,n,sn,num;
+        var promedio;
+        //entrada
+        n=parseInt(prompt("Ingresar la cantidad de números: "));
+        //proceso
+        i=0;
+        sn=0;
+        document.write("<h1>Los Resultados son:</h1>");
+        document.write("<hr>");
+        while(i<n){
+            i++; //contador
+            num=parseInt(prompt("Ingresar números: "));
+            sn+=num; //acumulador (+=) de productos
+            document.write(num+"<br>");
+        }
+        promedio=sn/n;
+        //salida
+        document.write("<br>");
+        document.write("La suma de los "+n+" numeros es: "+sn+"<br>");
+        document.write("El promedio de los "+n+"numeros es: "+promedio);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ventas</title>
+    <link rel="stylesheet" href="estilos5.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="main5.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <p>Vendedor: <input type="text" name="txtvendedor" 
+            placeholder="Ingrese el nombre del vendedor"></p>
+        <p>Venta 1: <input type="number" name="txtventa1" 
+            placeholder="Ingrese la venta número 1"></p>
+        <p>Venta 2: <input type="number" name="txtventa2" 
+            placeholder="Ingrese la venta número 2"></p>
+        <p>Venta 3: <input type="number" name="txtventa3" 
+            placeholder="Ingrese la venta número 3"></p>
+        <p>Ventas 4: <input type="number" name="txtventa4" 
+            placeholder="Ingrese la venta número 4"></p>
+        <p>Ventas 5: <input type="number" name="txtventa5" 
+            placeholder="Ingrese la venta número 5"></p>
+    <br>
+    <input type="button" id="enviar" onclick="mayor(txtvendedor.value,txtventa1.value,txtventa2.value,txtventa3.value,
+    txtventa4.value,txtventa5.value)" 
+        value="Calcular">
+    </form>
+
+</body>
+</html>

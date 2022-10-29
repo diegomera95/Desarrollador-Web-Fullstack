@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="estilos2.css" type="text/css">
+</head>
+<body>
+    <form id="form1">
+        <fieldset>
+            <legend>Datos del Vehícuo</legend>
+            Placa: <input type="text" name="xplaca"
+                maxlength="6" pattern="[0-9,a-z,A-Z]+" 
+                required>
+            <br>
+            Marca:<select name="xmarca">
+                <option selected>Seleccionar</option>
+                <option>Toyota</option>
+                <option>Nissan</option>
+                <option>Hyundai</option>
+                <option>La Chevrolet</option>
+            </select>
+            <br>
+            Modelo: <input type="text" name="xmodel"
+                pattern="[0-9,a-z,A-Z]+" required>
+            <br>
+            Color: <input type="color" name="xcolor">
+            <br>
+            Precio: <input type="text" name="xprecio"
+            placeholder="solo números"
+            pattern="[0-9]+">
+            <br>
+            Fabricación: <input type="text" name="xfab"
+            placeholder="solo números"
+            pattern="[0-9]+">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Financiamiento del Vehículo</legend>
+            Período: <select name="xper">
+                        <option selected>Seleccionar</option>
+                        <option>12 meses</option>
+                        <option>24 meses</option>
+                        <option>36 meses</option>
+                        <option>48 meses</option>
+                        <option>60 meses</option>
+            </select>
+            <br>
+            Fecha de pago: <input type="date" name="fecha">
+            <br>
+            Cuota Inicial: <input type="text" name="xcuoini"
+            placeholder="solo números"
+            pattern="[0-9]+">
+            <br>
+            Cuota Mensual: <input type="text" name="xcuomen"
+            placeholder="solo números"
+            pattern="[0-9]+">
+            <br>
+            Cuota doble: <input type="radio" name="r1">Si
+                <input type="radio" name="r1">No
+            <br>
+            Moneda: <input type="radio" name="r2">Soles
+                <input type="radio" name="r2">Dólares
+            <br>
+        </fieldset>
+            <input type="submit" name="bt1" value="Enviar">
+    </form>
+</body>
+</html>

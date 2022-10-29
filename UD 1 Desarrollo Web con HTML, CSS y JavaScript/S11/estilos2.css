@@ -1,0 +1,32 @@
+@charset "utf";
+/* CSS Document */
+legend{font-size: 20px;}
+#form1{
+    width: 25%;
+    margin: auto;
+    margin-top: 150px;
+    background: rgb(4, 156, 57);
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    border: solid 10px lightslategray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#form1 [required]{
+    border:solid 1px  #ff0000;
+}
+
+#form1 input{
+    margin-left:40px;
+}
+
+#pclave{
+    margin-left:15px;
+}
+#enviar{
+    margin-left:500px;
+    width: 250px;
+    height: 30px;
+}

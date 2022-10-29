@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 | Javascript</title>
+    <script>
+        // declarar variables
+        var emp;
+        var sueldo,v1,v2,v3;
+        var tc,cm,pts,ptd;
+        //entrada de datos
+        emp=prompt("Nombre del empleado");
+        sueldo=parseFloat(prompt("Sueldo"));
+        v1=parseFloat(prompt("Venta 1"));
+        v2=parseFloat(prompt("Venta 2"));
+        v3=parseFloat(prompt("Venta 3"));
+        tc=parseFloat(prompt("Tipo de Cambio"));
+        //proceso
+        cm=parseFloat((v1+v2+v3)*0.1);
+        pts=parseFloat(sueldo+cm);
+        ptd=parseFloat(pts/tc);
+        //salida
+        document.write("Resultado de la Venta:"+"<br>");
+        document.write("<hr>");
+        document.write("Empleado: "+emp+"<br>");
+        document.write("Sueldo: "+sueldo+"<br>");
+        document.write("Venta 1: "+v1+"<br>");
+        document.write("Venta 2: "+v2+"<br>");
+        document.write("Venta 3: "+v3+"<br>");
+        document.write("Tipo de cambio: "+tc+"<br><br>");
+
+        document.write("Comisión: "+cm.toFixed(2)+"<br>");
+        document.write("El Total a Pagar S/ es:"+pts.toFixed(2)+"<br>");
+        document.write("El Total a Pagar $ es:"+ptd.toFixed(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

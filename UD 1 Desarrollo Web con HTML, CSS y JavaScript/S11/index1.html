@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="estilos1.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="main1.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <p>Usuario: <input type="text" name="txtusuario" 
+            placeholder="Ingrese su usuario"></p>
+        <br>
+        <p id="pclave">Clave:<input type="password" name="txtclave" 
+            placeholder="Ingrese su contraseña"></p>
+        <br>
+        <br>
+        <input type="button" id="enviar" onclick="valida(txtusuario.value,txtclave.value)" 
+        value="Iniciar Sesión">
+    </form>
+</body>
+</html>

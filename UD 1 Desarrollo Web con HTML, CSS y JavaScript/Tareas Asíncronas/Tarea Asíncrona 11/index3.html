@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="estilos1.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="main3.js"></script>
+</head>
+<body>
+    <form id="form1">
+        <div class="form">
+            <p class="barra"><input type="number" name="txtnum" 
+                placeholder="Ingresar número"></p>
+        </div>
+    <br>
+    <input type="button" id="enviar" onclick="factorial(txtnum.value)" 
+        value="Calcular Factorial">
+    </form>
+<!--
+    <script type="text/javascript">
+        /* JS Document */
+    function factorial(xnum){
+        var num=parseFloat(prompt("Ingresa un número"));
+        var r=1;
+
+        for(var i=1; i<=num; i++){
+            r=r*i;
+        }
+        alert("El factorial del número "+num+" es: "+r);
+    }
+    </script>
+-->
+</body>
+</html>

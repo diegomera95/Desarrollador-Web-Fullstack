@@ -1,0 +1,97 @@
+@charset "utf";
+/* CSS Document */
+:root {
+    --colorTextos: #49454567;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc);
+}
+legend{font-size: 20px;}
+#form1{
+    width: 350px;
+    margin: auto;
+    margin-top: 150px;
+    background: #ffffff;
+    color: rgb(53, 53, 53);
+    font-size: 16px;
+    padding: 40px 0 ;
+    box-shadow: 0 0 6px    rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#form1 [required]{
+    border:solid 1px  #ff0000;
+}
+
+.form{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.barra{
+    padding: 10px 0px 15px 0;
+}
+
+input{
+    background: none;
+    color: #a3a3a3;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+input:focus{
+    outline: none;
+    color: #4e4e4e;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+#pclave{
+    margin-left:15px;
+}
+#enviar{
+    background: #ff00cc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+}

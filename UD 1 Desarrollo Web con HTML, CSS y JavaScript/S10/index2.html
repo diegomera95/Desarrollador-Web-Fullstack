@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 | Javascript</title>
+    <script>
+        //declarar variables
+        var empleado,ht,th,sb,dcto,sn;
+        //entrada
+        empleado=prompt("Ingresar empleado");
+        ht=parseInt(prompt("Ingresar Horas Trab"));
+        th=parseFloat(prompt("Ingresar Tarifa por Hora"));
+        //proceso
+        sb=ht*th;
+        dcto=sb*0.13;
+        sn=sb-dcto;
+        //salida
+        document.write("Resultados:"+"<br>");
+        document.write("<hr>");
+        document.write("Empleado:"+empleado+"<br>");
+        document.write("Horas Trab:"+ht+"<br>");
+        document.write("Tarifa hora:"+th+"<br>");
+        document.write("Sueldo Bruto:"+sb.toFixed(2)+"<br>");
+        document.write("Descuento:"+dcto.toFixed(2)+"<br>");
+        document.write("Sueldo Neto:"+sn.toFixed(2));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

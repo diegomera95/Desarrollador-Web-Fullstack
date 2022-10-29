@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabra en español, inglés y francés</title>
+</head>
+<body>
+    <script>
+        //declarar variables
+        var num;
+        var es,en,fr;
+        //entrada
+        num = parseInt(prompt("Ingresar Número (1-6)"));
+        //proceso
+        switch(num){
+            case 1:
+                es = "uno";
+                en = "one";
+                fr = "une";
+                break;
+            case 2:
+                es = "dos";
+                en = "two";
+                fr = "deux";
+                break;
+            case 3:
+                es = "tres";
+                en = "three";
+                fr = "trois";
+                break;
+            case 4:
+                es = "cuatro";
+                en = "four";
+                fr = "quatre";
+                break;
+            case 5:
+                es = "cinco";
+                en = "five";
+                fr = "cinq";
+                break;
+            case 6:
+                es = "seis";
+                en = "six";
+                fr = "six";
+                break;
+            default:
+                mes = "Número fuera del intervalo";
+                break;
+        }
+        //salida
+        document.write("<h1>"+"Resultados"+"</h1>");
+        document.write("<hr>");
+        document.write("Número: "+num+"<br>");
+        document.write("Español: "+es+"<br>");
+        document.write("Inglés: "+en+"<br>");
+        document.write("Francés: "+fr);
+    </script>
+</body>
+</html>

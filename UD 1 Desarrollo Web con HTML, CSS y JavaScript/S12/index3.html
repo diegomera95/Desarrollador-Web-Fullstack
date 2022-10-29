@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+        //declarar variables
+        var cant,ci,d;
+        //entrada
+        cant=parseInt(prompt("Ingresar la cantidad: "));
+        //proceso
+        ci=0;
+        while(cant>0){
+            d=cant%10; //dígito de la cantidad (residuo)
+            ci=(ci*10)+d;
+            cant=parseInt(cant/10);
+        }
+        //salida
+        document.write("<h1>Los Resultados son:</h1>");
+        document.write("<hr>");
+        document.write("La cantidad invertida es: "+ci);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

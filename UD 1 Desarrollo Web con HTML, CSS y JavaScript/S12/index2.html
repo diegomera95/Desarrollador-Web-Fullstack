@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Factorial de un número</h1>
+        <select id="numeros" onchange="datos()">
+            <option selected>Seleccionar</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+    <script>
+        function datos(){
+            //declarar variables
+            var n,i,f;
+            var cbonumeros = document.getElementById("numeros");
+            var valor = cbonumeros.options[cbonumeros.selectedIndex].text;
+            n=parseInt(valor);
+            //proceso
+            i=0; //inicializa la variable
+            f=1;
+            //muestra un texto en el navegador
+            document.write("<h1>"+"Factorial de un número"+"<h1>");
+            document.write("<hr>");
+            for(i=1;i<=n;i++){
+                f=f*i;
+            }
+            //muestra los resultados en el navegador
+            document.write("El factorial de "+n+" es: "+f+"<br>");
+
+        }
+    </script>
+</body>
+</html>
