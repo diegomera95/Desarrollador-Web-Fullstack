@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_2_JS</title>
+    <script>
+        //declaracion variable
+        var nombre;
+        let ingresos,otrosingresos,gastos;
+        let ahorrom,ahorrot,ahorros,ahorroa;
+        //entrada
+        nombre=prompt('Ingrese su nombre: ');
+        ingresos=parseFloat(prompt('Ingresar sus ingresos: '));
+        otrosingresos=parseFloat(prompt('Ingresar otros ingresos: '));
+        gastos=parseFloat(prompt('Ingresar sus gastos: '));
+        //proceso
+        ahorrom=(ingresos+otrosingresos)-gastos;
+        ahorrot=ahorrom*3;
+        ahorros=ahorrom*6;
+        ahorroa=ahorrom*12;
+        //salida `comilla simple alt+96
+        document.write('Resultados del financiamiento son: '+'<br>');
+        document.write('<hr>');
+        document.write('Nombre de la Persona: '+nombre+'<br>');
+        document.write(`Ingresos de la persona: ${ingresos} <br>`);
+        document.write(`Otros ingresos de la persona: ${otrosingresos} <br>`);
+        document.write(`Gastos de la persona: ${gastos} <br>`);
+        document.write(`Ahorro Mensual: ${ahorrom} <br>`);
+        document.write(`Ahorro Trimestral: ${ahorrot} <br>`);
+        document.write(`Ahorro Semestral: ${ahorros} <br>`);
+        document.write(`Ahorro Anual: ${ahorroa} <br>`);
+    </script>
+    
+</head>
+<body>
+</body>
+</html>

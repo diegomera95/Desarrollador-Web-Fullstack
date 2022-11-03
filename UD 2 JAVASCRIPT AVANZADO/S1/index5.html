@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_5_JS</title>
+<body>
+        <script>
+            //declarar variables
+        var opc,num1,num2;
+        var suma,resta,multi,divi;
+        //entrada
+        num1 = window.parseInt(prompt("Ingresar Número 1: "));
+        num2 = window.parseInt(prompt("Ingresar Número 2: "));
+        //proceso
+        suma=num1+num2;
+        resta=num1-num2;
+        multi=num1*num2;
+        divi=num1/num2;
+            //salida
+            document.write('Resultados de la operacion son: '+'<br>');
+            document.write('<hr>');
+            document.write('Numero 1: '+num1+'<br>');
+            document.write('Numero 2: '+num2+'<br>');
+            document.write(`Suma: ${suma.toFixed(2)} <br>`);
+            document.write(`Resta: ${resta.toFixed(2)} <br>`);
+            document.write(`Multiplicacion: ${multi.toFixed(2)} <br>`);
+            document.write(`Division: ${divi.toFixed(2)}`);
+        </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_4_JS</title>
+<body>
+        <h1>Empresa <strong>Agunsa S.A</strong></h1>
+        <p id="salida1"></p>
+        <p id="salida2"></p>
+        <p id="salida3"></p>
+        <p id="salida4"></p>
+        <p id="salida5"></p>
+        <p id="salida6"></p>
+        <p id="salida7"></p>
+        <p id="salida8"></p>
+
+        <script>
+            //declarar variables
+            let dni,vendedor,venta1,venta2,venta3,venta4;
+            let total,promedio;
+            //entrada
+            dni=window.prompt("Introduce el DNI");
+            vendedor=window.prompt("Introduce el nombre del vendedor");
+            venta1=window.parseFloat(prompt("Introduce la venta 1"));
+            venta2=window.parseFloat(prompt("Introduce la venta 2"));
+            venta3=window.parseFloat(prompt("Introduce la venta 3"));
+            venta4=window.parseFloat(prompt("Introduce la venta 4"));
+            //proceso
+            total=venta1+venta2+venta3+venta4;
+            promedio=(venta1+venta2+venta3+venta4)/4;
+            //salida
+            document.getElementById("salida1").innerHTML=(`El DNI es: ${dni}`);
+            document.getElementById("salida2").innerHTML=(`El nombre del vendedor es: ${vendedor}`);
+            document.getElementById("salida3").innerHTML=(`La venta 1 es: ${venta1}`);
+            document.getElementById("salida4").innerHTML=(`La venta 2 es: ${venta2}`);
+            document.getElementById("salida5").innerHTML=(`La venta 3 es: ${venta3}`);
+            document.getElementById("salida6").innerHTML=(`La venta 4 es: ${venta4}`);
+            document.getElementById("salida7").innerHTML=(`El total de las ventas es: ${total.toFixed(2)}`);
+            document.getElementById("salida8").innerHTML=(`El promedio de las ventas es: ${promedio.toFixed(2)}`);
+        </script>
+</body>
+</html>

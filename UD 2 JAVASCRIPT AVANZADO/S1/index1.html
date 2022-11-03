@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_1_JS</title>
+</head>
+<script>
+    //declarar variables
+    var capital,periodo,interes,cuota,montototal;
+    const tasa=0.08; //declaracion de una constante
+    var dni,cliente;
+    //entrada de datos
+    dni=prompt("Ingresar DNI: ");
+    cliente=prompt("Ingresar cliente: ");
+    capital=parseFloat(prompt("Ingresar el capital"));
+    periodo=parseInt(prompt("Ingresar el periodo"));
+    //proceso
+    interes=capital*tasa*periodo;
+    montototal=capital+interes;
+    cuota=montototal/periodo;
+    //salida
+    document.write('Resultados del financiamiento son: '+'<br>');
+    document.write('<hr>');
+    document.write('DNI: '+dni+'<br>');
+    document.write('Cliente: '+cliente+'<br>');
+    document.write('Capital: '+capital+'<br>');
+    document.write('Tasa: '+(tasa*100)+'%'+'<br>');
+    document.write('Periodo: '+periodo+'<br>');
+    document.write('Interes: '+interes+'<br>');
+    document.write('Monto Total: '+montototal+'<br>');
+    document.write('Cuota:'+cuota.toFixed(2));
+</script>
+<body>
+</body>
+</html>

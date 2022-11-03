@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_3_JS</title>
+<body>
+        <p>InnerHtml controla que puede incluirse en un elemento.</p>
+        <p id="salida1"></p>
+        <p id="salida2"></p>
+        <p id="salida3"></p>
+        <script>
+            //declarar variables
+            let num1,num2,resultado1,resultado2,resultado3;
+            let resultado;
+            //entrada
+            num1=window.prompt("Introduce un numero 1");
+            num2=window.prompt("Introduce un numero 2");
+            //proceso
+            resultado=parseInt(num1)+parseInt(num2);
+            resultado1=resultado*2;
+            resultado2=resultado*3;
+            resultado3=resultado*4;
+            //salida
+            document.getElementById("salida1").innerHTML=(`El doble es ${resultado1}`);
+            document.getElementById("salida2").innerHTML=(`El triple es ${resultado2}`);
+            document.getElementById("salida3").innerHTML=(`El cuadruple es ${resultado3}`);
+        </script>
+</body>
+</html>
