@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1_JS</title>
+</head>
+<body>
+    <script>
+        //declarar variables
+        let alumno;
+        let nt1,nt2,nt3,promedio,nmy,nmn;
+        let condicion,estado;
+        //entrada de datos
+        alumno=prompt("Ingresar Alumno");
+        nt1=parseInt(prompt("Ingresar nota 1"));
+        nt2=parseInt(prompt("Ingresar nota 2"));
+        nt3=parseInt(prompt("Ingresar nota 3"));
+        //proceso
+        nmy=nt1
+        //nota mayor
+        if (nt2>nmy){
+            nmy=nt2;
+        }
+        if (nt3>nmy){
+            nmy=nt3;
+        }
+        nmn=nt1
+        //nota menor
+        if (nt2<nmn){
+            nmn=nt2;
+        }
+        if (nt3<nmn){
+            nmn=nt3;
+        }
+        //condicion del alumno
+        promedio=(nt1+nt2+nt3)/3;
+        if (promedio>=10.5){
+            condicion="Aprobado";
+        } else{
+            condicion="Desaprobado";
+        }
+        //estado del alumno
+        if(promedio<=5){
+            estado="Pesimo";
+        } else if (promedio<=10){
+            estado="Malo";
+        } else if (promedio<=15){
+            estado="Regular";
+        } else if (promedio<=18){
+            estado="Bueno";
+        } else if (promedio<=20){
+            estado="Excelente";
+        }
+        //salida
+        document.write("Datos de la Operacion: "+"<br>");
+        document.write("<hr>");
+        document.write("Alumno: "+alumno+"<br>");
+        document.write("Nota 1: "+nt1+"<br>");
+        document.write("Nota 2: "+nt2+"<br>");
+        document.write("Nota 3: "+nt3+"<br>");
+        document.write("<br>");
+        document.write("Resultados estadisticos: "+"<br>");
+        document.write("<hr>");
+        document.write("Promedio: "+promedio.toFixed(2)+"<br>");
+        document.write("Nota mayor: "+nmy+"<br>");
+        document.write("Nota menor: "+nmn+"<br>");
+        document.write("Condicion: "+condicion+"<br>");
+        document.write("Estado: "+estado);
+    </script>
+</body>
+</html>

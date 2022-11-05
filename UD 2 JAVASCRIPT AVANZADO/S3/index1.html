@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_2</title>
+    <script>
+        //declarar funciones con parametros y retornando de valores
+        function ftotal(xventa1,xventa2,xventa3){
+            return (xventa1+xventa2+xventa3);
+        }
+        function fpromedio(xtotal){
+            return (xtotal/3);
+        }
+        function fventamayor(xventa1,xventa2,xventa3){
+            let mayor;
+            mayor=xventa1;
+            //nota mayor
+            if (xventa2>mayor){
+                mayor=xventa2;
+            }
+            if (xventa3>mayor){
+                mayor=venta3;
+            }
+            return (mayor);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        //declarar variables
+        let vendedor;
+        let venta1,venta2,venta3;
+        let totalventa,promedioventa,ventamayor;
+        //entrada de datos
+        vendedor=prompt("Ingrese el nombre del vendedor: ");
+        venta1=parseFloat(prompt("Ingrese la Venta 1:"));
+        venta2=parseFloat(prompt("Ingrese la Venta 2:"));
+        venta3=parseFloat(prompt("Ingrese la Venta 3:"));
+        //invocar a la funcion
+        totalventa=ftotal(venta1,venta2,venta3);
+        promedioventa=fpromedio(totalventa);
+        ventamayor=fventamayor(venta1,venta2,venta3);
+        //salida
+        document.write("<h1>"+"Datos de la Operación: "+"</h1>"+"<br>");
+        document.write("<hr>");
+        document.write("Vendedor: "+vendedor+"<br>");
+        document.write("Venta 1: "+venta1+"<br>");
+        document.write("Venta 2: "+venta2+"<br>");
+        document.write("Venta 3: "+venta3+"<br>");
+        document.write("<br>");
+        document.write("<h1>"+"Resultados estadísticos: "+"</h1>"+"<br>");
+        document.write("<hr>");
+        document.write("Total: "+totalventa+"<br>");
+        document.write("Promedio: "+promedioventa.toFixed(2)+"<br>");
+        document.write("Venta Mayor: "+ventamayor);
+    </script>
+</body>
+</html>

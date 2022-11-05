@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2_JS</title>
+</head>
+<body>
+    <h1>Elegir Producto</h1>
+    <select id="drones" onchange="datos()">
+        <option selected>Seleccionar</option>
+        <option value="1">Drone 1</option>
+        <option value="2">Drone 2</option>
+        <option value="3">Drone 3</option>
+        <option value="4">Drone 4</option>
+        <option value="5">Drone 5</option>
+    </select>
+<script>
+    function datos(){
+        //declarar variables
+        let cliente;
+        let cantidad,precio,tc;
+        let cbodrones,valor,n,producto,imagen,mes;
+        const cigv=0.18;
+        let st,igv,tps,tpd;
+        //entrada
+        cliente=prompt("Ingresar cliente");
+        n=document.getElementById("drones").selectedIndex;
+        cbodrones=document.getElementById("drones");
+        producto=cbodrones.options[cbodrones.selectedIndex].text;
+        cantidad=parseInt(prompt("Ingresar cantidad"));
+        tc=parseFloat(prompt("Ingresar tipo de cambio"));
+        //proceso
+        switch(n){
+            case 1:
+                precio=3000;
+                imagen="imagenes/drone1.jpg";
+                break;
+            case 2:
+                precio=4000;
+                imagen="imagenes/drone2.jpg";
+                break;
+            case 3:
+                precio=5000;
+                imagen="imagenes/drone3.jpg";
+                break;
+            case 4:
+                precio=5000;
+                imagen="imagenes/drone4.jpg";
+                break;
+            case 5:
+                precio=6000;
+                imagen="imagenes/drone5.jpg";
+                break;
+            default:
+                mes="Numero fuera del intervalo";
+                break;
+        }
+        st=precio*cantidad;
+        igv=st*cigv;
+        tps=st+igv;
+        tpd=tps/tc;
+        //salida
+        document.write("Datos de la compra de productos: "+"<br>");
+        document.write("<hr>");
+        document.write("Cliente: "+cliente+"<br>");
+        document.write("Producto: "+producto+"<br>");
+        document.write("Precio: "+precio+"<br>");
+        document.write("Cantidad: "+cantidad+"<br>");
+        document.write("Tipo de cambio: "+tc+"<br>");
+        document.write("<hr>");
+        document.write("Resultados de la compra del producto: "+"<br>");
+        document.write("SubTotal: "+st+"<br>");
+        document.write("IGV: "+igv+"<br>");
+        document.write("Total a pagar en soles: "+tps+"<br>");
+        document.write("Total a pagar en dolares: "+tpd.toFixed(2)+"<br>");
+        document.write("<br><hr>");
+        document.write('<img width=500px src='+imagen+'>');
+    }
+</script>
+</body>
+</html>
