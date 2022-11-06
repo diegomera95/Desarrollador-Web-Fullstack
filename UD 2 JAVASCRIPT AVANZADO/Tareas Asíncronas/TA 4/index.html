@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/JavaScript">
+        function extraer() {
+            //declarar variables
+            let number,c1,c2,c3;
+            let raiz,potencia;
+            //entrada
+            number=parseInt(document.getElementById("numero").value);
+            //proceso
+            if (number>999){
+                console.log(number);
+                alert("Ingrese un numero de 3 cifras.")
+            } else if (number<0){
+                console.log(number);
+                alert("Ingrese un numero entero.")
+            }
+            c1=Math.floor(number/100);
+            c2=Math.floor((number/10)%10);
+            c3=Math.floor(number%10);
+            raiz=Math.sqrt(c1)+Math.sqrt(c2)+Math.sqrt(c3);
+            potencia=Math.pow(c1,2)+Math.pow(c2,2)+Math.pow(c3,2);
+          /* document.write(c1+"<br>");
+            document.write(c2+"<br>");
+            document.write(c3+"<br>");
+            document.write(potencia+"<br>");
+            document.write(raiz+"<br>");
+            document.getElementById("calculo").value=raiz.toFixed(2);
+            document.getElementById("calculo").value=potencia;*/
+            //salida
+           if (c1=c2=c3){
+            document.getElementById("calculo").value=raiz.toFixed(2);
+            } else if (c1!=c2) {
+                
+            document.getElementById("calculo").value=potencia;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+        <div class="box">
+            <h1>Cálculo de Cifras</h1>
+            <div class="grupo">
+                <input id="numero" type="number" class="barra" pattern="[0-9]"+ required>
+                <span class="barra"></span><label for="">Número entero de 3 cifras</label>
+            </div>
+            <div class="grupo disable">
+                <input id="calculo" type="number" pattern="[0-9]"+ disabled>
+                <label for=""></label>
+            </div>
+            <button type="button" class="btn-1" onclick="extraer()">Calcular</button>
+        </div>
+    </div>
+</body>
+</html>
