@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj E2</title>
+    <script type="text/javascript">
+        function reloj(){
+            var hoy=new Date();//Instanciamiento
+            var h=hoy.getHours();//Devuelve la hora
+            var m=hoy.getMinutes();//Devuelve los minutos
+            var s=hoy.getSeconds();//Devuelve los segundos
+            //  5   05
+            m=actualizarhora(m);
+            s=actualizarhora(s);
+            document.getElementById('displayreloj').innerHTML = h+":"+m+":"+s;
+            var t = setTimeout(function(){reloj()},1000);
+        }
+        function actualizarhora(i){
+            if (i<10){
+                i= "0" + i;
+            }//Añade el cero en números menores de 10
+            return i;
+        }
+    </script>
+</head>
+<body onload="reloj()">
+    <div style="text-align: center;">
+        <div><h2>Reloj Digital</h2><h3>Ejemplo JavaScript</h3></div>
+        <div style="color: blue; font-family: verdana, arial;
+        font-size: 30px; padding: 15px;" id="displayreloj"> &nbsp;</div>
+    </div>
+</body>
+</html>

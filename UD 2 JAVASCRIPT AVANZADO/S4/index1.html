@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        //declarar variables
+        let num1,num2,num3,num4,mayor,menor;
+        let entero,raiz,potencia;
+        //entrada de datos
+        num1=Math.floor(Math.random()*5)+1;
+        num2=Math.floor(Math.random()*5)+1;
+        num3=Math.floor(Math.random()*5)+1;
+        num4=49.8;
+        //proceso
+        mayor=Math.max(num1,num2,num3);
+        menor=Math.min(num1,num2,num3);
+        entero=Math.round(num4);
+        raiz=Math.sqrt(num1);
+        potencia=Math.pow(num1,num2);
+        //salida
+        document.write("Datos de la operacion: "+"<br>");
+        document.write("<hr>");
+        document.write("Numero 1: "+num1+"<br>");
+        document.write("Numero 2: "+num2+"<br>");
+        document.write("Numero 3: "+num3+"<br>");
+        document.write("Numero 4: "+num4+"<br>");
+        document.write("<br>");
+        document.write("Resultados estadisticos: "+"<br>");
+        document.write("<hr>");
+        document.write("Mayor: "+mayor+"<br>");
+        document.write("Menor: "+menor+"<br>");
+        document.write("Entero: "+entero+"<br>");
+        document.write("Raiz cuadrada: "+raiz.toFixed(4)+"<br>");
+        document.write("Potencia: "+potencia+"<br>");
+        document.write("Redondear: "+entero);
+    </script>
+</body>
+</html>

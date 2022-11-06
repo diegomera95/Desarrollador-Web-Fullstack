@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Primos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/JavaScript">
+        function esPrimo() {
+            //decalracion de variables
+            let num;
+            let contador=0;
+            let i=2;
+            //entrada
+            num=parseInt(document.getElementById("numero").value);
+            //proceso
+            if (num < 2){
+                contador=0;
+            }
+            while (i<=num-1){
+                if(num%i===0){
+                    contador=contador+1;
+                }
+                i++;
+            }
+
+            if (contador>0) {
+                document.getElementById("primo").value = (+num+" no es número primo");
+            } else{
+                document.getElementById("primo").value = (+num+" es número primo");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+        <div class="box">
+            <h1>Números Primos</h1>
+            <div class="grupo">
+                <input id="numero" type="number" class="barra" pattern="[0-9]"+ required>
+                <span class="barra"></span><label for="">Insertar número entero</label>
+            </div>
+            <div class="grupo">
+                <input id="primo" type="text" pattern="[0-9]"+ disabled>
+                <span class="barra"></span><label for=""></label>
+            </div>
+            <button type="button" class="btn-1" onclick="esPrimo()">Calcular</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Juguetes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+<body  class="container">
+    <div style="display: grid; justify-content: center; align-items: center;">
+    <div class="p-4">
+        <h1 style="text-align: center; font-family: 'Montserrat'; font-weight: 700;">Tienda de Juguetes</h1>
+        <table class="table mt-4">
+            <thead class="bg-dark text-light">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Juguetes</th>
+                <th scope="col">Precio (S/)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Monopolio</td>
+                <td>70.99</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Ajedrez</td>
+                <td>78.99</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Lego</td>
+                <td>100.99</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Dama</td>
+                <td>58.50</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Laberinto</td>
+                <td>35.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="p-4">
+        <table class="table">
+            <thead class="bg-dark text-light">
+            <tr>
+                <th scope="col">Cantidad de juguetes</th>
+                <th scope="col">Descuento (%)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th><10</th>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <th>≥ 10 y ≤ 20</th>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <th>>20</th>
+                <td>9.5</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="p-4">
+        <select id="juguetes" class="form-select" aria-label="Default select example">
+            <option selected>Seleccione el juguete</option>
+                <option value="1">Monopolio</option>
+                <option value="2">Ajedrez</option>
+                <option value="3">Lego</option>
+                <option value="4">Dama</option>
+                <option value="5">Laberinto</option>
+        </select>
+        <div class="input-group mb-2 mt-2">
+            <span class="input-group-text" 
+            id="inputGroup-sizing-default" style="width: 100px;">Cantidad</span>
+            <input id="cantidad" type="number" class="form-control" 
+            aria-label="Sizing example input" 
+            aria-describedby="inputGroup-sizing-default" pattern="[0-9]"+>
+        </div>
+        <div class="input-group mb-2 mt-2">
+            <span class="input-group-text" 
+            id="inputGroup-sizing-default" style="width: 100px;">SubTotal</span>
+            <input id="subtotal" type="text" class="form-control" 
+            aria-label="Sizing example input" 
+            aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <div class="input-group mb-2 mt-2">
+            <span class="input-group-text" 
+            id="inputGroup-sizing-default" style="width: 100px;">Descuento</span>
+            <input id="descuento" type="text" class="form-control" 
+            aria-label="Sizing example input" 
+            aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <div class="input-group mb-2 mt-2">
+            <span class="input-group-text" 
+            id="inputGroup-sizing-default" style="width: 100px;">IGV</span>
+            <input id="igv" type="text" class="form-control" 
+            aria-label="Sizing example input" 
+            aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+        <div class="input-group mb-2 mt-2">
+            <span class="input-group-text" 
+            id="inputGroup-sizing-default" style="width: 100px;">Total</span>
+            <input id="total" type="text" class="form-control" 
+            aria-label="Sizing example input" 
+            aria-describedby="inputGroup-sizing-default" disabled>
+        </div>
+    </div>
+   
+    
+    <div style="display: flex; justify-content: center;">
+        <button type="button" class="btn btn-dark" style="width: 150px;" onclick="calcular()">Calcular</button>
+    </div>
+    </div>
+</body>
+</html>
