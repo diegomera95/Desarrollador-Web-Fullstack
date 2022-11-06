@@ -16,7 +16,7 @@
             //entrada
             number=parseInt(document.getElementById("numero").value);
             //proceso
-            if (number>999){
+            if (number>999, number<100){
                 console.log(number);
                 alert("Ingrese un numero de 3 cifras.")
             } else if (number<0){
@@ -28,7 +28,7 @@
             c3=Math.floor(number%10);
             raiz=Math.sqrt(c1)+Math.sqrt(c2)+Math.sqrt(c3);
             potencia=Math.pow(c1,2)+Math.pow(c2,2)+Math.pow(c3,2);
-          /* document.write(c1+"<br>");
+            /*document.write(c1+"<br>");
             document.write(c2+"<br>");
             document.write(c3+"<br>");
             document.write(potencia+"<br>");
@@ -36,11 +36,11 @@
             document.getElementById("calculo").value=raiz.toFixed(2);
             document.getElementById("calculo").value=potencia;*/
             //salida
-           if (c1=c2=c3){
+            
+            if (c1=c2 && c2==c3){
             document.getElementById("calculo").value=raiz.toFixed(2);
-            } else if (c1!=c2) {
-                
-            document.getElementById("calculo").value=potencia;
+            } else{
+                document.getElementById("calculo").value=potencia;
             }
         }
     </script>
