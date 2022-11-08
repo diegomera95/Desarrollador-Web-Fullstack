@@ -1,0 +1,45 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-size: 25px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+.registro
+{
+  margin-top:10px;   
+  margin-left:150px;
+}
+
+#btnlimpiar
+{
+  width: 15%;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+	font-size:16px;
+	color:white;
+	background-color: #2c3e50;
+	font-weight: bold;
+}
+#btnenviar
+{
+  width: 15%;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+	font-size:16px;
+	color:white;
+	background-color: #2c3e50;
+	margin-left:25px;
+	font-weight: bold;
+}
