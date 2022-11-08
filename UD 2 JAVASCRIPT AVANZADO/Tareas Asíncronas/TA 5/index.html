@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de Planillas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script>
+        function calcular(){
+            //declarar variables
+            let cat,horas,as;
+            let sb,tarifa,bon,bonificacion,sn;
+            //entrada
+            cat=document.getElementById("xcat").selectedIndex;
+            horas=document.getElementById("xhoras").value;
+            as=document.getElementById("xas").selectedIndex;
+            //proceso
+            switch(cat){
+                case 1:
+                    tarifa=40
+                    break;
+                case 2:
+                    tarifa=35
+                    break;
+                case 3:
+                    tarifa=30
+                    break;
+                default:
+                    alert("Fuera del intervalo");
+            }
+            switch(as){
+                case 1:
+                    bon=0.15
+                    break;
+                case 2:
+                    bon=0.2
+                    break;
+                case 3:
+                    bon=0.3
+                    break;
+                case 4:
+                    bon=0.35
+                    break;
+                default:
+                    alert("Fuera del intervalo");
+            }
+            sb=horas*tarifa;
+            bonificacion=sb*bon;
+            sn=sb+bonificacion;
+            //salida
+            document.getElementById('xsb').value=sb.toFixed(2);
+            document.getElementById('xbonificacion').value=bonificacion.toFixed(2);
+            document.getElementById('xsn').value=sn.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="get" class="container">
+        <div style="display: grid; justify-content: center; align-items: center;">
+            <div class="p-4">
+                <h1 style="text-align: center; font-family: 'Montserrat'; font-weight: 700;">Pago de Planillas</h1>
+                <table class="table mt-4">
+                    <thead class="bg-dark text-light">
+                    <tr>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Tarifa (S/)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>A</th>
+                        <td>40.00</td>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <td>30.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p-4">
+                <table class="table">
+                    <thead class="bg-dark text-light">
+                    <tr>
+                        <th scope="col">Años de servicio</th>
+                        <th scope="col">Bonificación</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>1 – 3</th>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <th>4 – 7</th>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <th>8 – 12</th>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <th>13 – más</th>
+                        <td>35%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p-4">
+                <select id="xcat" class="form-select" aria-label="Default select example">
+                    <option selected>Categoría</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                </select>
+                <div class="input-group mb-2 mt-2">
+                    <span class="input-group-text" 
+                    id="inputGroup-sizing-default" style="width: 150px;">Cant. hrs trabajo</span>
+                    <input id="xhoras" type="number" class="form-control" 
+                    aria-label="Sizing example input" 
+                    aria-describedby="inputGroup-sizing-default" pattern="[0-9]"+>
+                </div>
+                <select id="xas" class="form-select" aria-label="Default select example">
+                    <option selected>Años de Servicio</option>
+                        <option value="1">1 – 3</option>
+                        <option value="2">4 – 7</option>
+                        <option value="3">8 – 12</option>
+                        <option value="3">13 – más</option>
+                </select>
+                <div class="input-group mb-2 mt-2">
+                    <span class="input-group-text" 
+                    id="inputGroup-sizing-default" style="width: 150px;">Sueldo Base</span>
+                    <input id="xsb" type="text" class="form-control" 
+                    aria-label="Sizing example input" 
+                    aria-describedby="inputGroup-sizing-default" disabled>
+                </div>
+                <div class="input-group mb-2 mt-2">
+                    <span class="input-group-text" 
+                    id="inputGroup-sizing-default" style="width: 150px;">Bonificación</span>
+                    <input id="xbonificacion" type="text" class="form-control" 
+                    aria-label="Sizing example input" 
+                    aria-describedby="inputGroup-sizing-default" disabled>
+                </div>
+                <div class="input-group mb-2 mt-2">
+                    <span class="input-group-text" 
+                    id="inputGroup-sizing-default" style="width: 150px;">Sueldo Neto</span>
+                    <input id="xsn" type="text" class="form-control" 
+                    aria-label="Sizing example input" 
+                    aria-describedby="inputGroup-sizing-default" disabled>
+                </div>
+            </div>
+           
+            
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-dark" style="width: 150px;" onclick="calcular()">Calcular</button>
+            </div>
+            </div>
+    </form>
+</body>
+</html>
